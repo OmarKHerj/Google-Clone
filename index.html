@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+
+        <style>
+            nav {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                padding-top: 10px;
+            }
+
+            nav a{
+                color: white;
+                text-decoration: none;
+                padding: 10px;
+                
+                font-family: arial,sans-serif;
+                
+            }
+            nav a:hover{
+                text-decoration: underline;
+            }
+            .tag {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding-top: 40px;
+            }
+            .bar {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                min-height: 44px;
+                padding-top: 10px;
+
+            }
+            input[type="submit"]{
+                display: flex;
+                background-color: #303134; 
+                border: 1px solid #303134; 
+                border-radius: 4px; 
+                color: #e8eaed;
+                font-family: arial,sans-serif;
+                font-size: 14px;
+                margin: 11px 4px;
+                padding: 0 16px;
+                cursor: pointer;
+                height: 36px;
+
+            }
+            input[type="submit"]:hover{
+                box-shadow: 0 1px 3px rgba(23,23,23,0.24);
+                border: 1px solid #5f6368;
+
+            }
+           .border{
+                border: 1px solid #5f6368;
+                border-radius: 24px;
+                width: 500px;
+                padding: 10px;
+                font-family: arial,sans-serif;
+                background: #202124;
+                box-shadow: none;
+                margin-top: 30px;
+
+            }
+            .border:hover{
+                background-color: #5f6368;
+            }
+            input[type="text"]{
+                all: unset;
+                color: white;
+                padding-left: 5px;
+                padding-top: 5px;
+                width: 90%;
+
+            }
+            .search {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: stretch;
+                padding-top: 18px;
+    
+            }
+            
+
+        </style>
+        
+    </head>
+    <body style="background-color: rgb(32, 33, 36);">
+        <nav >
+            <div  ><a href="/image.html" >Google Image</a></div>
+            <div  ><a href="/advanced.html" >Advanced Search</a></div>
+        </nav>
+        <div class="tag">
+            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_light_color_272x92dp.png" alt="#" height="92" width="272">
+        </div>
+        
+        <div class="bar">
+        <form action="https://www.google.com/search">
+            <div class="border">
+            
+            <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="width: 18px;">
+                <path fill="#515151" d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z">
+
+                </path></svg>
+
+                <input type="text" name="q">
+            </div>
+            <div class="search">
+            <input type="submit" value="Google Search" >
+            <input type="submit" value="I'm feeling Lucky" name="btnI">
+            </div>
+        </form>
+        </div>
+    </body>
+</html>

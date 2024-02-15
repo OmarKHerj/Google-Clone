@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+
+        <style>
+            nav {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                padding-top: 10px;
+            }
+
+            nav a{
+                color: black;
+                text-decoration: none;
+                padding: 10px;
+                
+                font-family: arial,sans-serif;
+                
+            }
+            nav a:hover{
+                text-decoration: underline;
+            }
+            .bar{
+                color: #d93025;
+                font-size: 20px;
+                margin: 25px 35px;
+            }
+            .line{
+                border-bottom: 1px solid #ebebeb;
+            }
+            .alayer{
+                width: 96%;
+                margin: 40px 2% 0 45px;
+            }
+            .otb{
+                width: 100%;
+                clear: both;
+            }
+            .oab{
+                float: left;
+                
+                min-width: 167px;
+                width: 16%;
+                font-size: 16px;
+                min-height: 42px;
+                font-weight: 500;
+                color: #333;
+                vertical-align: middle;
+            }
+            .obb{
+                height: 30px;
+                display: table-cell;
+                vertical-align: middle;
+            }
+             div.otb div.okb{
+                float: left;
+   
+                min-width: 167px;
+                min-height: 41px;
+                vertical-align: middle;
+                width: 50%;
+
+            }
+      
+          
+            div.otb div.okh{
+                float: left;
+    
+    
+                font-size: 13px;
+                font-weight: 700;
+                color: #777;
+                padding-left: 5px;
+                vertical-align: middle;
+            }
+            .pad{
+                padding-right: 16px;
+            }
+            .textinput{
+                border-radius: 1px;
+                border: 1px solid #d9d9d9;
+                border-top: 1px solid #c0c0c0;
+                font-size: 13px;
+                height: 25px;
+                padding: 1px 8px;
+                width: 100%;
+                text-align: left;
+
+            }
+            .text1{
+                float: left;
+    
+    
+                min-width: 160px;
+                margin: 0 0 8px 1%;
+                color: #555;
+                font-size: 9px;
+                padding-left: 5px;
+                vertical-align: middle;
+                position: relative;
+            }
+            .text2{
+                color: #666;
+                font-family: monospace;
+                font-size: 11px;
+                white-space: pre;
+            }
+            .du{
+                border: 1px solid #3079ed;
+                color: #fff;
+                background-color: #4d90fe;
+                background-image: -webkit-linear-gradient(top,#4d90fe,#4787ed);
+                cursor: default;
+                font-size: 11px;
+                font-weight: bold;
+                text-align: center;
+                white-space: nowrap;
+                margin-right: -19px;
+    
+            }
+
+
+        </style>
+        
+    </head>
+    <body >
+        <div>
+        <nav >
+            <div  ><a href="/index.html" >Google Search</a></div>
+            <div  ><a href="/image.html" >Google Images</a></div>
+        </nav>
+        </div>
+        <div class="bar">
+            <label style="margin-left:10px">Advanced Search</label>
+
+        </div>
+        <div class="line"></div>
+
+        <div class="alayer">
+            <form action="https://www.google.com/search">
+                <div class="otb">
+                    <div style="clear: both;">
+                        <div class="oab">
+                        <div class="obb">
+                        <span>Find pages with...</span>
+                        
+                    </div>
+                    </div>
+                    <div class="okb"></div>
+                    <div class="okh">
+                        <div style="display: flex;">To do this in the search box.</div>
+
+
+                    </div>
+            </div>
+                </div>
+
+            
+            
+
+            <div class="otb">
+                <div style="clear: both;">
+                    <div class="oab">
+                        <div class="obb">
+                            <label for="xX4UFf">all these words:</label>
+
+                        </div>
+                    </div>
+
+                    <div class="okb">
+                        <div class="pad">
+                            <input class="textinput" value="" autofocus="autofocus" id="xX4UFf" name="as_q" type="text">
+
+                        </div>
+                    </div>
+
+
+
+                    <div class="text1">
+                        <div class="obb">
+                             Type the important words:  
+                            <span class="text2">tri-colour rat terrier</span>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+                <div class="otb">
+                    <div style="clear: both;">
+                        <div class="oab">
+                            <div class="obb">
+                                <label for="CwYCWc">this exact word or phrase:</label>
+    
+                            </div>
+                        </div>
+    
+                        <div class="okb">
+                            <div class="pad">
+                                <input class="textinput" value="" autofocus="autofocus" id="CwYCWc" name="as_epq" type="text">
+    
+                            </div>
+                        </div>
+    
+    
+    
+                        <div class="text1">
+                            <div class="obb">
+                                Put exact words in quotes:   
+                                <span class="text2">"rat terrier"</span>
+    
+                            </div>
+    
+                        </div>
+    
+    
+                    </div>
+                    <div class="otb">
+                        <div style="clear: both;">
+                            <div class="oab">
+                                <div class="obb">
+                                    <label for="mSoczb">any of these words:</label>
+        
+                                </div>
+                            </div>
+        
+                            <div class="okb">
+                                <div class="pad">
+                                    <input class="textinput" value="" autofocus="autofocus" id="mSoczb" name="as_oq" type="text">
+        
+                                </div>
+                            </div>
+        
+        
+        
+                            <div class="text1">
+                                <div class="obb">
+                                    Type 
+
+                                    <span class="text2">OR</span>
+                                    between all the words you want:
+                                    <span class="text2">miniature OR standard</span>
+
+                                    
+        
+                                </div>
+        
+                            </div>
+        
+        
+                        </div>
+                        <div class="otb">
+                            <div style="clear: both;">
+                                <div class="oab">
+                                    <div class="obb">
+                                        <label for="t2dX1c">none of these words:</label>
+            
+                                    </div>
+                                </div>
+            
+                                <div class="okb">
+                                    <div class="pad">
+                                        <input class="textinput" value="" autofocus="autofocus" id="t2dX1c" name="as_eq" type="text">
+            
+                                    </div>
+                                </div>
+            
+            
+            
+                                <div class="text1">
+                                    <div class="obb">
+
+                                        Put a minus sign just before words that you don't want:  
+                                        <span class="text2">-rodent, -"Jack Russell"</span>
+    
+                                        
+            
+                                    </div>
+            
+                                </div>
+            
+            
+                            </div>
+
+                            <div class="otb">
+                                <div style="clear: both;">
+                                    <div class="oab">
+                                        <div class="obb">
+                                            
+                
+                                        </div>
+                                    </div>
+                
+                                    <div class="okb">
+                                        <div class="pad" style="text-align: right;">
+                                            <input id="CIGjud" name="tbs" type="hidden" value="">
+                                            <input class="du" style="/* -webkit-user-select:none; */user-select:none;line-height:100%;height:30px;min-width:120px;" value="Advanced Search" type="submit">
+
+                
+                                        </div>
+                                    </div>
+                
+                
+                
+                                    <div class="text1">
+                                        <div class="obb">
+    
+                                    
+        
+                                            
+                
+                                        </div>
+                
+                                    </div>
+                
+                
+                                </div>
+
+                            </form>
+    
+
+            </div>
+        </div>
+        
+
+    </body>
+</html>
